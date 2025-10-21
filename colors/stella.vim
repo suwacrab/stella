@@ -100,7 +100,7 @@ call s:hi('Normal', s:palette.gray05, s:palette.white, '')
 set background=light
 
 call s:hi('Constant', s:palette.gray11, [], 'bold')
-call s:hi('String', s:palette.gray08, [], '')
+call s:hi('String', s:palette.gray11, [], '')
 call s:hi('Number', s:palette.gray10, [], '')
 
 call s:hi('Identifier', s:palette.gray06, [], 'none')
