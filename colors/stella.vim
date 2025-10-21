@@ -1,6 +1,6 @@
 " YinYang - black/white color scheme
 
-if (&background ==# "dark" && get(g:, "colors_name", "") ==# "yang")
+if (&background ==# "dark" && get(g:, "colors_name", "") ==# "stella")
     runtime! colors/yin.vim
     finish
 endif
@@ -10,7 +10,7 @@ highlight clear
 if exists("syntax_on")
     syntax reset
 endif
-let g:colors_name = "yang"
+let g:colors_name = "stella"
 
 
 let s:palette = {}
