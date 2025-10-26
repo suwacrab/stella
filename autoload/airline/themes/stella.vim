@@ -8,7 +8,7 @@ set cpo&vim
 " [ guifg, guibg, ctermfg, ctermbg, opts ]. See "help attr-list" for valid
 " values for the "opt" value.
 
-"let g:airline#themes#stella#palette = {}
+let g:airline#themes#stella#palette = {}
 "let s:N1 = [ '#a8a8a8' , '#dfdfdf' , 17  , 190 ]
 "let s:N2 = [ '#f7f7f7' , '#a8a8a8' , 255 , 238 ]
 " let s:N3   = [ '#cfcfcf' , '#808080' , 85  , 234 ]
