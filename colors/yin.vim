@@ -1,7 +1,7 @@
 " YinYang - black/white color scheme
 
 if (&background ==# "light" && get(g:, "colors_name", "") ==# "yin")
-    runtime! colors/yang.vim
+    runtime! colors/stella.vim
     finish
 endif
 
