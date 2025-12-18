@@ -1,5 +1,10 @@
 let s:palette = {}
 
+let s:bold = 'bold'
+if s:stella_bold == 0
+	let s:bold = ''
+endif
+
 let s:palette.white = [254, '#f7f7f7']
 let s:palette.gray15 = [253, '#e4e4e4']
 let s:palette.gray14 = [250, '#bcbcbc']
@@ -84,25 +89,25 @@ function! stella#lite#load()
 	call s:hi('Normal', s:palette.gray05, s:palette.white, '')
 	set background=light
 
-	call s:hi('Constant', s:palette.gray11, [], 'bold')
+	call s:hi('Constant', s:palette.gray11, [], s:bold)
 	call s:hi('String', s:palette.gray11, [], '')
 	call s:hi('Number', s:palette.gray10, [], '')
 
 	call s:hi('Identifier', s:palette.gray06, [], 'none')
 	call s:hi('Function', s:palette.gray06, [], '')
 
-	call s:hi('Statement', s:palette.gray08, [], 'bold')
+	call s:hi('Statement', s:palette.gray08, [], s:bold)
 	call s:hi('Operator', s:palette.gray03, [], 'none')
 	call s:hi('Keyword', s:palette.gray10, [], '')
 
 	call s:hi('PreProc', s:palette.gray10, [], 'none')
 
-	call s:hi('Type', s:palette.gray09, [], 'bold')
+	call s:hi('Type', s:palette.gray09, [], s:bold)
 
 	call s:hi('Special', s:palette.gray10, [], '')
-	call s:hi('SpecialComment', s:palette.gray12, [], 'bold')
+	call s:hi('SpecialComment', s:palette.gray12, [], s:bold)
 
-	call s:hi('Title', s:palette.gray10, [], 'bold')
+	call s:hi('Title', s:palette.gray10, [], s:bold)
 	call s:hi('Todo', s:palette.purple, s:palette.white, '')
 	if has("nvim") || has("gui_running")
 		call s:hi('Comment', s:palette.gray12, [], 'italic')
@@ -117,14 +122,14 @@ function! stella#lite#load()
 
 	call s:hi('Visual', s:palette.white, s:palette.gray06, '')
 	call s:hi('Search', s:palette.gray15, s:palette.gray03, 'none')
-	call s:hi('IncSearch', s:palette.white, s:palette.gray11, 'bold')
+	call s:hi('IncSearch', s:palette.white, s:palette.gray11, s:bold)
 
 	call s:hi('SpellBad', s:palette.red, s:palette.white, 'undercurl')
 	call s:hi('SpellCap', s:palette.red, s:palette.white, 'undercurl')
 	call s:hi('SpellLocal', s:palette.red, s:palette.white, 'undercurl')
 	call s:hi('SpellRare', s:palette.brown, s:palette.white, 'undercurl')
 
-	call s:hi('Error', s:palette.red, s:palette.white, 'bold')
+	call s:hi('Error', s:palette.red, s:palette.white, s:bold)
 	call s:hi('ErrorMsg', s:palette.red, s:palette.white, '')
 	call s:hi('WarningMsg', s:palette.brown, s:palette.white, '')
 	call s:hi('ModeMsg', s:palette.gray10, [], '')
