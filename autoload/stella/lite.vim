@@ -1,7 +1,7 @@
 let s:palette = {}
 
 let s:bold = 'bold'
-if s:stella_bold == 0
+if g:stella_bold == 0
 	let s:bold = ''
 endif
 
