@@ -2,7 +2,7 @@ let s:palette = {}
 
 let s:bold = 'bold'
 if g:stella_bold == 0
-	let s:bold = ''
+	let s:bold = 'none'
 endif
 
 let s:palette.white = [254, '#f7f7f7']
