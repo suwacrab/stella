@@ -117,7 +117,6 @@ function! stella#lite#load()
 
 	call s:hi('LineNr', s:palette.gray13, s:palette.gray15, 'none')
 	call s:hi('FoldColumn', s:palette.gray08, s:palette.gray15, 'none')
-	call s:hi('Folded', s:palette.gray15, s:palette.white, 'none')
 	call s:hi('CursorLine', [], s:palette.gray15, 'none')
 	call s:hi('CursorLineNr', s:palette.gray06, s:palette.gray15, 'none')
 
