@@ -21,7 +21,6 @@ highlight! link SignColumn FoldColumn
 highlight! link ColorColumn FoldColumn
 highlight! link CursorColumn CursorLine
 
-highlight! link Folded LineNr
 highlight! link Conceal Normal
 highlight! link ErrorMsg Error
 
