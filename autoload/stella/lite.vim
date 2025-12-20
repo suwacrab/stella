@@ -9,11 +9,11 @@ let s:palette.white = [254, '#f0f0f0']
 let s:palette.gray15 = [253, '#e4e4e4']
 let s:palette.gray14 = [250, '#bcbcbc']
 let s:palette.gray13 = [249, '#b2b2b2']
-let s:palette.gray12 = [248, '#a8a8a8']
-let s:palette.gray11 = [247, '#c88693']
+let s:palette.gray12 = [248, '#b8a8a8']
+let s:palette.gray11 = [247, '#b89693']
 let s:palette.gray10 = [246, '#949494']
-let s:palette.gray09 = [245, '#8a8a8a']
-let s:palette.gray08 = [244, '#808080']
+let s:palette.gray09 = [245, '#80809a']
+let s:palette.gray08 = [244, '#807870']
 let s:palette.gray07 = [243, '#767676']
 let s:palette.gray06 = [242, '#666666']
 let s:palette.gray05 = [241, '#606060']
@@ -93,8 +93,8 @@ function! stella#lite#load()
 	call s:hi('String', s:palette.gray11, [], '')
 	call s:hi('Number', s:palette.gray10, [], '')
 
-	call s:hi('Identifier', s:palette.gray06, [], 'none')
-	call s:hi('Function', s:palette.gray06, [], '')
+	call s:hi('Identifier', s:palette.gray09, [], 'none')
+	call s:hi('Function', s:palette.gray09, [], '')
 
 	call s:hi('Statement', s:palette.gray08, [], s:bold)
 	call s:hi('Operator', s:palette.gray03, [], 'none')
