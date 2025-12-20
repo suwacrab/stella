@@ -102,7 +102,7 @@ function! stella#lite#load()
 
 	call s:hi('PreProc', s:palette.gray10, [], 'none')
 
-	call s:hi('Type', s:palette.gray09, [], s:bold)
+	call s:hi('Type', s:palette.gray11, [], s:bold)
 
 	call s:hi('Special', s:palette.gray10, [], '')
 	call s:hi('SpecialComment', s:palette.gray12, [], s:bold)
