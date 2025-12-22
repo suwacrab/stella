@@ -12,9 +12,9 @@ endif
 let g:colors_name = "stella"
 
 if &background == 'dark'
-	" call stella#dark#load()
+	call stella#dark#load()
 else
-	" call stella#lite#load()
+	call stella#lite#load()
 endif
 
 highlight! link Character Constant
