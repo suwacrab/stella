@@ -1,16 +1,20 @@
 " YinYang - black/white color scheme
 
+if !has('gui_running') && &t_Co < 256
+	finish
+endif
+
 highlight clear
 
 if exists("syntax_on")
-    syntax reset
+	syntax reset
 endif
 let g:colors_name = "stella"
 
-if (&background ==# "dark")
-    call stella#dark#load()
+if &background == 'dark'
+	" call stella#dark#load()
 else
-    call stella#lite#load()
+	" call stella#lite#load()
 endif
 
 highlight! link Character Constant
