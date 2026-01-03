@@ -110,7 +110,8 @@ function! stella#lite#load()
 	call s:hi('Title', s:palette.gray10, [], s:bold)
 	call s:hi('Todo', s:palette.purple, s:palette.white, '')
 	if has("nvim") || has("gui_running")
-		call s:hi('Comment', s:palette.gray12, [], 'italic')
+	"	call s:hi('Comment', s:palette.gray12, [], 'italic')
+		call s:hi('Comment', s:palette.gray12, [], '')
 	else
 		call s:hi('Comment', s:palette.gray12, [], '')
 	endif
