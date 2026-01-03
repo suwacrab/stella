@@ -12,7 +12,7 @@ return {
 	visual = {
 		a = { fg = '#949494'; bg = colors.light };
 	--	b = { fg = '#606060'; bg = '#d8b6b3' };
-		b = { fg = '#606060'; bg = '#c0c0c0' };
+		b = { fg = '#606060'; bg = '#c8c2c0' };
 		c = { fg = colors.light; bg = '#a0a0a0' };
 	};
 }
